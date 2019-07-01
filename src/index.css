@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +15,215 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*Welcome Page*/
+.parallaxWelcomeComponent {
+  background-image: url("images/homepage.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containerWelcomeComponent {
+  margin-top: -100px;
+  z-index: 10000;
+  background-color: white;
+}
+
+.containerRow {
+  padding-top: 50px;
+}
+
+.cardWelcomeComponent {
+  border: none !important;
+}
+
+.card-title {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+.card-img {
+  border-radius: 0% !important;
+}
+
+.blogUserName {
+  font-size: 12px;
+  float: right;
+}
+
+.blogUserName span {
+  font-weight: bold;
+}
+
+.quoteWelcomeComponent {
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  text-align: center !important;
+}
+
+/* NotFound Component  */
+
+.notfoundComponent {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+/* Single Post Component */
+
+.buttonDelete {
+  background-color: white !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  color: #e22f4f !important;
+}
+
+.buttonShowSingle {
+  background-color: white !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  color: #3c7fe8 !important;
+}
+
+.containerSingle {
+  margin-top: -100px;
+  z-index: 10000;
+  background-color: white;
+}
+
+.singlePostCard {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.singlePostTitle {
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+}
+
+.singlePostText {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.singlePostButtons {
+  text-align: right;
+  margin-right: 30px;
+}
+
+/* My Blogs */
+
+.buttonShow {
+  text-transform: uppercase !important;
+  color: #3c7fe8;
+}
+
+.myBlogsContainer {
+  margin-top: 20px;
+}
+
+/* Create Component */
+.createPost,
+.registerPost {
+  background-color: white !important;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  margin-top: 40px;
+}
+
+.iconCreate {
+  color: #037784;
+}
+
+.createBlogTitle,
+.signUpTitle {
+  font-family: "Playfair Display SC", serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.createForm .title {
+  border-bottom: 1px solid #d0d5d8 !important;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.createForm .textarea {
+  margin-bottom: 15px;
+}
+
+.registerForm input,
+.loginForm input {
+  border-bottom: 1px solid #d0d5d8 !important;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.iconSignUp {
+  color: #037784;
+  margin-right: 10px;
+}
+
+.loginButton,
+.signUpButton,
+.createButton {
+  text-transform: uppercase;
+  float: right;
+  color: #037784 !important;
+  border: 1px solid #037784 !important;
+  padding: 0.2rem 0.75rem !important;
+  border-radius: 0 !important;
+}
+
+.loginButton:hover,
+.signUpButton:hover,
+.createButton:hover {
+  background-color: #037784 !important;
+  color: white !important;
+}
+
+/* Header Component */
+
+.header {
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.1), 0px 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+  color: black;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.blog {
+  font-size: 35px !important;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 60px !important;
+  margin-left: 30px;
+}
+
+.signOutButton {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 15px !important;
+  padding: 0 !important;
+  vertical-align: 0 !important;
+}
+
+.userName {
+  float: right;
+  font-style: italic;
+  text-decoration: underline;
+  margin-right: -220% !important;
+}
+
+.errors {
+  color: #e84a4a;
+  font-style: italic;
 }
